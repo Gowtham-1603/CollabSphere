@@ -8,7 +8,6 @@ A project to streamline collaboration tools using containerization, Kubernetes, 
 - [Setup](#setup)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 CollabSphere is a project designed to integrate multiple DevOps tools (GitHub, Jenkins, Slack, JIRA, Docker, Kubernetes, etc.) into a cohesive workflow. It aims to improve team collaboration, automate workflows, and enhance monitoring and alerting.
@@ -41,3 +40,7 @@ chmod +x deploy.sh
 minikube service frontend-service --url
 6.  Access the backend:
 minikube service backend-service --url
+
+## Contributing 
+1. Gowtham B(Team Leader)
+2. Deeksha Shree N

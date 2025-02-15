@@ -1,0 +1,19 @@
+name: CI/CD Pipeline
+on: [push]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Build Docker Images
+        run: |
+          docker build -t frontend-app:1.0 ./frontend
+          docker build -t backend-app:1.0 ./backend
+
+      - name: Deploy to Minikube
+        run: |
+          minikube start
+          kubectl apply -f k8s/
